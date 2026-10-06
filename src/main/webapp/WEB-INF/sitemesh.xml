@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+    <!-- Map default decorator for all pages -->
+    <mapping path="/*" decorator="/WEB-INF/decorators/main.jsp"/>
+
+    <!-- Exclude static resources and file downloads from decoration -->
+    <mapping path="/assets/*" exclude="true"/>
+    <mapping path="/uploads/*" exclude="true"/>
+    <mapping path="/download" exclude="true"/>
+    <mapping path="/image" exclude="true"/>
+</sitemesh>
